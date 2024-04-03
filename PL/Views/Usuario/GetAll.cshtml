@@ -1,0 +1,55 @@
+﻿@model ML.Usuario
+<link rel="stylesheet" href="~/css/Estilo.css">
+<!DOCTYPE html>
+<html>
+<body>
+    <h1> Tabla Usuarios</h1>
+    <header>
+        <table id="Tabla">
+            <thead>
+              <tr>
+                  <th>Actualizar</th>
+                    <th>Nombre</th>
+                    <th>A. Paterno</th>
+                    <th>A. Materno</th>
+                    <th>Edad</th>
+                    <th>Email</th>
+                    <th>Eliminar</th>
+              </tr>
+            </thead>
+            <tbody>
+                
+                
+                    @foreach (ML.Usuario usuario in Model.Usuarios)
+                    {
+                        <tr>
+                        @* <td><button name="IdUsuario" value="@usuario.IdUsuario"> Actualizar </button></td> *@
+                        <td>
+                            <form method="get" action="Form">
+                                <input type="hidden" name="IdUsuario" value="@usuario.IdUsuario">
+                                <button class="BotonActualizar" type="submit">Actualizar</button>
+                            </form>
+                        </td>
+                        <td>@usuario.Nombre</td>
+                        <td>@usuario.ApellidoPaterno</td>
+                        <td>@usuario.ApellidoMaterno</td>
+                        <td>@usuario.Edad</td>
+                        <td>@usuario.Email</td>
+                        <td>
+                            <form method="post" action="Delete">
+                                <input type="hidden" name="idUsuario" value="@usuario.IdUsuario">
+                                <button class="BotonEliminar" type="submit">Eliminar</button>
+                            </form>
+                        </td>
+
+                        @* <td> <button name="idUsuario" value="@usuario.IdUsuario"> Eliminar </button></td> *@
+                        </tr>
+                        
+
+                    }
+               
+            </tbody>
+        </table>
+    </header>
+</body>
+</html>

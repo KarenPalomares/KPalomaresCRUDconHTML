@@ -1,0 +1,84 @@
+﻿body {
+    text-align:center; /*Centrartexto*/
+    background-color: white;
+}
+h1 { 
+    color: black;
+}
+
+#Tabla {
+    width: 100%; /*ancho*/
+    border-collapse: collapse; /*unifica los bordes*/
+    border: 1px solid #000000; 
+}
+td {
+    padding: 10px;/* Separacion de celdas*/
+    border: 1px solid #000000;
+}
+th {
+    background-color: lightpink;
+    font-weight: bold;
+    padding: 8px;
+    border: 1px solid #000000;
+    color:white;
+}
+
+label, input {
+    margin-right: 10px; /* Ajusta el espaciado entre el label y el input */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+#FondoFormulario {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+    width: 90%;
+    max-width: 50%;
+    text-align: center;
+    margin:0 auto;
+}
+.BotonActualizar {
+    background-color: #f4e84a; /* Color de fondo */
+    border: none; /* Eliminar borde */
+    color: white; /* Color del texto */
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; /* Decoración del texto */
+    display: inline-block; /* Mostrar como bloque */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    border-radius: 10px; /* Radio de borde */
+}
+.BotonEliminar {
+    background-color: #db5e5e; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 10px; 
+}
+.BotonAgregar {
+    background-color: #acd56c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+

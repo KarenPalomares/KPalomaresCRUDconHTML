@@ -1,0 +1,38 @@
+﻿@model ML.Usuario
+<link rel="stylesheet" href="~/css/Estilo.css">
+
+
+<div id="FondoFormulario">
+    <h1> FORMULARIO</h1>
+
+    <form action="Form" method="post">
+        <div class="row">
+            <label for="nombre">Nombre</label>
+            <input name="Nombre" value="@Model.Nombre" type="text" />
+        </div>
+        <div class="row">
+            <label>Apellido Paterno</label>
+            <input name="ApellidoPaterno" value="@Model.ApellidoPaterno" type="text" />
+        </div>
+        <div class="row">
+            <label>Apellido Materno</label>
+            <input name="ApellidoMaterno" type="text" />
+        </div>
+
+        <div class="row">
+            <label>Edad</label>
+            <input name="Edad" type="text" />
+        </div>
+        <div class="row">
+            <label>Email</label>
+            <input name="Email" type="text" />
+        </div>
+        <div class="row">
+            <label>Password</label>
+            <input name="Password" type="text" />
+        </div>
+
+        <button class="BotonAgregar" type="submit">Agregar</button>
+    </form>
+</div>
+
